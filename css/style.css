@@ -1,0 +1,284 @@
+html,body{
+     height: 100%;
+     font: 11px Tahoma, Sans-serif;
+     background-color: #ffffff;
+     width: 100%;
+ }
+body,
+ul,
+li,
+input,
+button,
+p{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    min-height: 100%;
+    width: 1000px;
+    margin: auto;
+}
+.header{
+    height:211px;
+    background: url(../Images/header.png) no-repeat 0 0;
+    margin: auto;
+    padding: 28px 48px 0;
+}
+.header-content {
+    position: relative;
+    width: 904px;
+    height: 90px;
+    margin: 19px auto 0;
+}
+.login {
+    float: left;
+    width: 95px;
+    font-size: 10px;
+    color: #a9bdd4;
+}
+.login-form {
+    line-height: 11px;
+    list-style: none;
+    margin-bottom: 7px;
+}
+.login-form li input {
+    float: right;
+    width: 52px;
+    height: 9px;
+    border: 1px dotted #a9bdd4;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 9px;
+    cursor: text;
+}
+form button {
+    border: none;
+    background: none;
+    text-decoration: underline;
+    color: #0000ff;
+    cursor: pointer;
+    font-size: 11px;
+}
+.contacts {
+    float: right;
+    color: #a9bdd4;
+}
+.contacts ul {
+    text-align: right;
+    line-height: 12px;
+    font-size: 10px;
+    list-style: none;
+}
+.clear-fix {
+    clear: both;
+}
+.flags-container {
+    position: absolute;
+    width: 612px;
+    height: 65px;
+    left: 146px;
+    bottom: 0;
+}
+.flags-container ul li {
+    list-style: none;
+    position: absolute;
+}
+.rss {
+    position: absolute;
+    bottom: 0;
+    width: 14px;
+    height: 13px;
+    background-position: 0 -13px;
+    overflow: hidden;
+}
+.s-left a,
+.s-right a {
+    position: absolute;
+    width: 16px;
+    height: 15px;
+    display: block;
+}
+.s-left a {
+    background: url(../Images/s_left.png) no-repeat 0 0;
+    bottom: 0;
+    left: 0;
+}
+.s-right a {
+    background: url(../Images/s_right.png) no-repeat 0 0;
+    bottom: 0;
+    right: 0;
+}
+.s-left a:hover,
+.s-right a:hover{
+    background-position: 0 -15px;
+}
+.flag1 {
+    left: 34px;
+    top: 22px;
+}
+.flag1 a {
+    margin: -21px 0 0 18px;
+}
+.flag2 {
+    left: 121px;
+    top: 16px;
+}
+.flag2 a {
+    margin: -21px 0 0 18px;
+}
+.flag3 {
+    left: 211px;
+    top: 13px;
+}
+.flag3 a {
+    margin: -21px 0 0 14px;
+}
+.flag4 {
+    left: 311px;
+    top: 13px;
+}
+.flag4 a {
+    margin: -21px 0 0 16px;
+}
+.flag5 {
+    left: 403px;
+    top: 16px;
+}
+.flag5 a {
+    margin: -20px 0 0 16px;
+}
+.flag6 {
+    left: 494px;
+    top: 23px;
+}
+.flag6 a {
+    margin: -21px 0 0 14px;
+}
+.flag1 a,
+.flag2 a,
+.flag3 a,
+.flag4 a,
+.flag5 a,
+.flag6 a {
+    display: block;
+    text-decoration: none;
+    font-size: 10px;
+    color: #0094d9;
+}
+.icons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.home,
+.mail,
+.share {
+    float: left;
+    margin-right: 5px;
+}
+.home a,
+.mail a,
+.share a {
+    background: url(../Images/icons.png) no-repeat 0 0;
+    width: 14px;
+    height: 13px;
+    display: block;
+}
+.home a{
+    background-position: 0 -38px;
+}
+.mail a {
+    background-position: 0 -25px;
+}
+.share a {
+    background-position: 0 -13px;
+}
+.nav-menu {
+    list-style: none;
+    margin: 30px 0 0 2px;
+}
+.nav-menu li {
+    display: inline-block;
+    margin-right: 37px;
+    font-size: 11px;
+}
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+.nav-menu li a {
+    text-decoration: none;
+    color: #0094d9;
+    margin: 0;
+}
+.main{
+    background: url(../Images/line.png) repeat-x 0 0;
+    min-height:460px;
+    height:auto;
+    width: 900px;
+    margin: auto;
+    padding-top: 23px;
+}
+.right,
+.center,
+.left {
+    float: left;
+    height: 100%;
+}
+.right{
+    width: 174px;
+    padding-top: 5px;
+}
+.center{
+    width: 537px;
+    padding: 3px 5px 0 0;
+}
+.left{
+    width: 174px;
+    padding-left: 10px;
+}
+
+.left ul li {
+    list-style: none;
+    line-height: 20px;
+}
+.left ul li a{
+    text-decoration: none;
+    color: #0094d9;
+    font-size: 11px;
+}
+.link:hover,
+.article a:hover {
+    text-decoration: underline ;
+}
+.article{
+    margin-bottom: 15px;
+    line-height: 14px;
+}
+.article img {
+    float: left;
+    margin:2px 7px 9px 0;
+}
+.article a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 5px;
+    color: #0094d9;
+}
+.date {
+    line-height: 10px;
+    font-size: 10px;
+    color: #a9a9a9;
+}
+.article p {
+    line-height: 14px;
+    margin: 0;
+    font-size: 11px;
+    color: #0094d9;
+}
+.footer {
+    background: url(../Images/line.png) repeat-x 0 0;
+    margin: auto;
+    height: 30px;
+    width: 900px;
+}

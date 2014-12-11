@@ -1,0 +1,324 @@
+html {
+  height: 100%;
+  font: 11px Tahoma, Sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+}
+body {
+  height: 100%;
+  font: 11px Tahoma, Sans-serif;
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+ul, li, input, button, p {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  min-height: 100%;
+  width: 1000px;
+  margin: auto;
+}
+.header {
+  height: 211px;
+  background: url(../images/header.png) no-repeat 0 0;
+  margin: auto;
+  padding: 28px 48px 0;
+}
+.header-content {
+  position: relative;
+  width: 904px;
+  height: 90px;
+  margin: 19px auto 0;
+}
+.login {
+  float: left;
+  width: 95px;
+  font-size: 10px;
+  color: #a9bdd4;
+}
+.login-form {
+  line-height: 11px;
+  list-style: none;
+  margin-bottom: 7px;
+  li input {
+    float: right;
+    width: 52px;
+    height: 9px;
+    border: 1px dotted #a9bdd4;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 9px;
+    cursor: text;
+  }
+}
+form button {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: #0000ff;
+  cursor: pointer;
+  font-size: 11px;
+}
+.contacts {
+  float: right;
+  color: #a9bdd4;
+  ul {
+    text-align: right;
+    line-height: 12px;
+    font-size: 10px;
+    list-style: none;
+  }
+}
+.clear-fix {
+  clear: both;
+}
+.flags-container {
+  position: absolute;
+  width: 612px;
+  height: 65px;
+  left: 146px;
+  bottom: 0;
+  ul li {
+    list-style: none;
+    position: absolute;
+  }
+}
+.rss a {
+  background: url("../images/icons.png");
+  position: absolute;
+  bottom: 0;
+  width: 14px;
+  height: 13px;
+  overflow: hidden;
+}
+.s-left a, .s-right a {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  display: block;
+}
+.s-left a {
+  background: url(../images/s_left.png) no-repeat 0 0;
+  bottom: 0;
+  left: 0;
+}
+.s-right a {
+  background: url(../images/s_right.png) no-repeat 0 0;
+  bottom: 0;
+  right: 0;
+}
+.s-left a:hover, .s-right a:hover {
+  background-position: 0 -15px;
+}
+.flag1 {
+  left: 34px;
+  top: 22px;
+  a {
+    margin: -21px 0 0 18px;
+  }
+}
+.flag2 {
+  left: 121px;
+  top: 16px;
+  a {
+    margin: -21px 0 0 18px;
+  }
+}
+.flag3 {
+  left: 211px;
+  top: 13px;
+  a {
+    margin: -21px 0 0 14px;
+  }
+}
+.flag4 {
+  left: 311px;
+  top: 13px;
+  a {
+    margin: -21px 0 0 16px;
+  }
+}
+.flag5 {
+  left: 403px;
+  top: 16px;
+  a {
+    margin: -20px 0 0 16px;
+  }
+}
+.flag6 {
+  left: 494px;
+  top: 23px;
+  a {
+    margin: -21px 0 0 14px;
+  }
+}
+.flags a {
+  display: block;
+  text-decoration: none;
+  font-size: 10px;
+  color: #0094d9;
+}
+.icons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.home, .mail, .share {
+  float: left;
+  margin-right: 5px;
+}
+.home a, .mail a, .share a {
+  background: url(../images/icons.png) no-repeat 0 0;
+  width: 14px;
+  height: 13px;
+  display: block;
+}
+$contactImageSize: 13px;
+$contactIcons: 'rss a', 'share a', 'mail a', 'home a';
+$yPosition: 0px;
+@for $i from 0 to length($contactIcons) {
+  .#{nth($contactIcons, $i + 1)} {
+    background-position: 0px $yPosition - $i * $contactImageSize;
+  }
+}
+.nav-menu {
+  list-style: none;
+  margin: 30px 0 0 2px;
+  li {
+    display: inline-block;
+    margin-right: 37px;
+    font-size: 11px;
+    &:last-child {
+      margin-right: 0;
+    }
+    a {
+      text-decoration: none;
+      color: #0094d9;
+      margin: 0;
+    }
+  }
+}
+.main {
+  background: url(../images/line.png) repeat-x 0 0;
+  min-height: 460px;
+  height: auto;
+  width: 900px;
+  margin: auto;
+  padding-top: 23px;
+}
+.right, .center, .left {
+  float: left;
+  height: 100%;
+}
+.right {
+  width: 174px;
+  padding-top: 5px;
+}
+.center {
+  width: 537px;
+  padding: 3px 5px 0 0;
+}
+.left {
+  width: 174px;
+  padding-left: 10px;
+  ul li {
+    list-style: none;
+    line-height: 20px;
+    a {
+      text-decoration: none;
+      color: #0094d9;
+      font-size: 11px;
+    }
+  }
+}
+.link:hover {
+  text-decoration: underline;
+}
+.article {
+  a:hover {
+    text-decoration: underline;
+  }
+  margin-bottom: 15px;
+  line-height: 14px;
+  img {
+    float: left;
+    margin: 2px 7px 9px 0;
+  }
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 5px;
+    color: #0094d9;
+  }
+}
+.date {
+  line-height: 10px;
+  font-size: 10px;
+  color: #a9a9a9;
+}
+.article p {
+  line-height: 14px;
+  margin: 0;
+  font-size: 11px;
+  color: #0094d9;
+}
+.channel {
+  width: 830px;
+  height: 100px;
+  margin: auto;
+  list-style: none;
+  position: relative;
+  li {
+    position: absolute;
+  }
+}
+.channel-container{
+  position: relative;
+  width: 1000px;
+  height: 100%;
+}
+.channel1 {
+  left: 0;
+  top: 0;
+}
+.channel2 {
+  left: 210px;
+  top: 0;
+}
+.channel3 {
+  left: 420px;
+  top: 0;
+}
+.channel4 {
+  left: 630px;
+  top: 0;
+}
+.arrowLeft a, .arrowRight a {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  display: block;
+}
+.arrowLeft a {
+  background: url(../images/s_left.png) no-repeat 0 0;
+  top: 40px;
+  left: 0;
+}
+.arrowRight a {
+  background: url(../images/s_right.png) no-repeat 0 0;
+  top: 40px;
+  right: 0;
+}
+.arrowLeft a:hover, .arrowRight a:hover {
+  background-position: 0 -15px;
+}
+.footer {
+  background: url(../images/line.png) repeat-x 0 0;
+  margin: auto;
+  height: 30px;
+  width: 900px;
+}
